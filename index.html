@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CalcApp by danerscode</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/96x96.png">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="App">
+        <div>
+            <h1>CalcApp by danerscode</h1>
+            <div class="CalcAppMain">
+                <div class="CalcApp">
+                <div id="display">{{ current || '0' }}</div>
+                <div @click="clear" class="btn">C</div>
+                <div @click="sign" class="btn">+/-</div>
+                <div @click="percent" class="btn">%</div>
+                <div @click="divide" class="btn operator">/</div>
+                <div @click="append('7')" class="btn">7</div>
+                <div @click="append('8')" class="btn">8</div>
+                <div @click="append('9')" class="btn">9</div>
+                <div @click="times" class="btn operator">x</div>
+                <div @click="append('4')" class="btn">4</div>
+                <div @click="append('5')" class="btn">5</div>
+                <div @click="append('6')" class="btn">6</div>
+                <div @click="minus" class="btn operator">-</div>
+                <div @click="append('1')" class="btn">1</div>
+                <div @click="append('2')" class="btn">2</div>
+                <div @click="append('3')" class="btn">3</div>
+                <div @click="add" class="btn operator">+</div>
+                <div @click="append('0')" class="btn" id="zero">0</div>
+                <div @click="dot" class="btn">.</div>
+                <div @click="equal" class="btn operator">=</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Criado em <a href="https://vuejs.org/" target="_blank">VueJS</a>  por <a href="https://danerscode.com" target="_blank">@danerscode</a>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
